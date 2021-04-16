@@ -1,0 +1,122 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 16px;
+}
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+.header{
+    display: flex;
+    flex-flow: column nowrap;
+    background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    
+}
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+
+
+
+.nav{
+    flex: 5 3 auto;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.nav a{
+    color: hsl(0, 0%, 100%);
+    margin-left: 5%;
+
+    
+}
+.botonLogin{
+    flex: 1 1 auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+.botonLogin a{
+    color: hsl(0, 0%, 100%);
+    margin-right: 5%;
+}
+
+.botonLogin button{
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 35px;
+    border-style: none;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    color: hsl(353, 100%, 62%) ;
+    font-weight: 700 ;
+    letter-spacing: 1px;
+
+}
+.texto-principal{
+    height: 400px;
+    margin-top: 130px;
+    align-items: center;
+    text-align: center;
+
+}
+
+.texto-principal h1{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-size: 60px;    
+}
+
+.texto-principal h4{
+    color: hsl(0, 0%, 100%);
+    font-weight: 300;
+    font-family: 'Overpass', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.btns{
+    margin-top: 50px;
+}
+
+.btnStart{
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 35px;
+    border-style: none;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    color: hsl(353, 100%, 62%);
+    font-weight: 700 ;
+    letter-spacing: 1px;
+}
+.btnLearn{
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 35px;
+    border-color: hsl(0, 0%, 100%);;
+    border-style: solid;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700 ;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+
+.margeninterno{
+    padding: 0 50px;
+}
+
+
+.section{
+    background: #00ff00;
+}

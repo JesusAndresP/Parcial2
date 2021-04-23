@@ -172,14 +172,20 @@ section h1{
 }
 
 .row2{
-        display: flex;
-        flex-flow: column nowrap;
+
         background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
         border-radius: 0px 120px 0px 0px;
         height: 500px;
+        
+}
+.boxRight{
+    display: flex;
+    float: right;
+    width: 50%;
 }
 
-.row2 h1{
+.boxRight h1{
+    text-align: left;
+    width: max-content;
     color: hsl(0, 0%, 100%);
-    text-align: right;
 }

@@ -166,4 +166,15 @@ section h1{
 }
 .boxLeft p{
     padding-top: 5%;
+    color:hsl(207, 13%, 34%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+}
+
+.row2{
+        display: flex;
+        flex-flow: column nowrap;
+        background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+        border-radius: 0px 120px 0px 0px;
+
 }

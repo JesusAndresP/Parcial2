@@ -176,5 +176,10 @@ section h1{
         flex-flow: column nowrap;
         background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
         border-radius: 0px 120px 0px 0px;
+        height: 500px;
+}
 
+.row2 h1{
+    color: hsl(0, 0%, 100%);
+    text-align: right;
 }

@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
 }
-body{
+
+body {
     font-size: 16px;
-    
 }
-.padre{
-    display:flex;
+
+.padre {
+    display: flex;
     flex-flow: column nowrap;
 }
-.texto-principal{
+
+.texto-principal {
     height: 400px;
     margin-top: 130px;
     align-items: center;
@@ -20,15 +22,15 @@ body{
     z-index: 10;
 }
 
-.texto-principal h1{
+.texto-principal h1 {
     color: hsl(0, 0%, 100%);
     font-weight: 300;
     font-family: 'Overpass', sans-serif;
     text-align: center;
-    font-size: 60px;    
+    font-size: 60px;
 }
 
-.texto-principal h4{
+.texto-principal h4 {
     color: hsl(0, 0%, 100%);
     font-weight: 300;
     font-family: 'Overpass', sans-serif;
@@ -37,7 +39,7 @@ body{
     margin-top: 20px;
 }
 
-.btnStart{
+.btnStart {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 35px;
     border-style: none;
@@ -46,146 +48,199 @@ body{
     padding: 15px;
     background: hsl(0, 0%, 100%);
     color: hsl(353, 100%, 62%);
-    font-weight: 700 ;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-top: 50px;
-    
 }
 
-.btnStart:hover{
+.btnStart:hover {
     color: hsl(0, 0%, 100%);
     background: rgba(255%, 255%, 255%, 35%);
     cursor: pointer;
 }
 
-.btnLearn{
+.btnLearn {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 35px;
-    border-color: hsl(0, 0%, 100%);;
+    border-color: hsl(0, 0%, 100%);
+    ;
     border-style: solid;
     width: auto;
     height: auto;
     padding: 15px;
     color: hsl(0, 0%, 100%);
-    font-weight: 700 ;
+    font-weight: 700;
     letter-spacing: 1px;
     background-color: transparent;
 }
-.btnLearn:hover{
+
+.btnLearn:hover {
     background: hsl(0, 0%, 100%);
     color: hsl(353, 100%, 62%);
     cursor: pointer;
 }
-.header{
+
+.header {
     display: flex;
     flex-flow: column nowrap;
     background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-radius: 0px 0px 0px 120px;
 }
-.heroimage{
+
+.heroimage {
     position: fixed;
     right: -80%;
     top: -180%;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-flow: row nowrap;
     height: 100px;
     align-items: center;
 }
 
-
-
-.nav{
+.nav {
     flex: 5 3 auto;
     font-family: 'Ubuntu', sans-serif;
     z-index: 10;
-
 }
-.nav a{
+
+.nav a {
     color: hsl(0, 0%, 100%);
     margin-left: 5%;
-
-    
 }
-.botonLogin{
+
+.botonLogin {
     flex: 1 1 auto;
     font-family: 'Ubuntu', sans-serif;
     z-index: 10;
-
-    
 }
-.botonLogin a{
+
+.botonLogin a {
     color: hsl(0, 0%, 100%);
 }
 
-.botonLogin button{
+.botonLogin button {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 35px;
     border-style: none;
     width: auto;
     height: auto;
     padding: 15px;
-    color: hsl(353, 100%, 62%) ;
-    font-weight: 700 ;
+    color: hsl(353, 100%, 62%);
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
-.botonLogin button:hover{
+.botonLogin button:hover {
     color: hsl(0, 0%, 100%);
     background: rgba(255%, 255%, 255%, 35%);
     cursor: pointer;
 }
 
-
-.margeninterno{
+.margeninterno {
     padding: 0 50px;
 }
 
-section{
-    padding: 10%;
-}
-
-section h1{
+.Title1 h1 {
+    padding: 5%;
     font-weight: 600;
     font-family: 'Overpass', sans-serif;
     text-align: center;
     color: hsl(208, 49%, 24%);
 }
-.boxLeft{
+
+.sec1 {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.boxLeft1 {
     width: 50%;
 }
 
-.boxLeft h3{
-    padding-top: 10%;
+.boxLeft1 div:first-child {
+    margin-right: 20px;
+}
+
+.boxLeft1 h3 {
+    margin-top: 10%;
     font-weight: 600;
     font-family: 'Overpass', sans-serif;
-    text-align:left;
+    text-align: left;
     color: hsl(208, 49%, 24%);
 }
-.boxLeft p{
+
+.boxLeft1 p {
     padding-top: 5%;
-    color:hsl(207, 13%, 34%);
+    color: hsl(207, 13%, 34%);
     font-family: 'Overpass', sans-serif;
     font-size: 12px;
 }
 
-.row2{
-
-        background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
-        border-radius: 0px 120px 0px 0px;
-        height: 500px;
-        
-}
-.boxRight{
+.boxRight1 {
     display: flex;
     float: right;
     width: 50%;
 }
 
-.boxRight h1{
+.boxRight1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sec2 {
+    background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-radius: 0px 100px 0px 100px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.boxRight2 {
+    width: 50%;
+}
+
+.boxRight2 h1 {
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
     text-align: left;
-    width: max-content;
     color: hsl(0, 0%, 100%);
+}
+
+.boxRight2 p {
+    padding-top: 5%;
+    padding-right: 50%;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+}
+
+.boxLeft2 {
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circulos {
+    height: 200%;
+    margin-top: -60%;
+    margin-left: -30%;
+}
+
+.celulares {
+    position: absolute;
+    z-index: 9;
+    margin-left: -25%;
+    height: 95%;
 }

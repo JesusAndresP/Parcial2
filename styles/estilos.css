@@ -164,10 +164,6 @@ body {
     width: 50%;
 }
 
-.boxLeft1 div:first-child {
-    margin-right: 20px;
-}
-
 .boxLeft1 h3 {
     margin-top: 10%;
     font-weight: 600;
@@ -243,4 +239,47 @@ body {
     z-index: 9;
     margin-left: -25%;
     height: 95%;
+}
+
+.sec3 {
+    display: flex;
+    margin-right: 15%;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-top: 15%;
+}
+
+.boxRight3 {
+    width: 50%;
+    padding-left: 6%;
+
+}
+
+.boxRight3 h3 {
+    margin-top: 10%;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+    color: hsl(208, 49%, 24%);
+}
+
+.boxRight3 p {
+    padding-top: 5%;
+    color: hsl(207, 13%, 34%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+}
+
+.boxLeft3 {
+    display: flex;
+    float: right;
+    width: 50%;
+}
+
+.boxLeft3 img {
+    width: 150%;
+    height: auto;
+    display: block;
+    margin-left: -44%;
 }

@@ -435,6 +435,11 @@ body {
     }
     .menuMovil {
         visibility: visible;
+        margin-right: 5%;
+    }
+    .logo{
+        padding: 0;
+        margin-left: 5%;
     }
     .BotonesCabecera {
         visibility: hidden;

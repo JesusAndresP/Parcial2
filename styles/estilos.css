@@ -53,8 +53,6 @@ body {
     margin-left: 5%;
 }
 
-
-
 .menuMovil {
     display: flex;
     flex-direction: column;
@@ -108,12 +106,14 @@ body {
     display: inline-block;
     user-select: none;
 }
-.menuMovil hr{
+
+.menuMovil hr {
     margin-top: 30%;
     margin-bottom: 10%;
     margin-left: 10%;
     width: 80%;
 }
+
 .menuMovil button {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 35px;
@@ -124,14 +124,11 @@ body {
     margin-left: 26%;
     margin-top: 5%;
     margin-bottom: 5%;
-    background-color: hsl(353, 100%, 62%); 
+    background-color: hsl(353, 100%, 62%);
     color: white;
     font-weight: 700;
     letter-spacing: 1px;
-
 }
-
-
 
 /* Botones login y Sign up */
 
@@ -426,19 +423,42 @@ body {
     width: 20%;
 }
 
-
-
 /* Adaptibilidad moviles */
 
 @media screen and (max-width:767px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     .menuDesktop {
         visibility: hidden;
     }
-    .menuMovil{
+    .menuMovil {
         visibility: visible;
     }
     .BotonesCabecera {
         visibility: hidden;
     }
-
+    .hero {
+        padding-bottom: 40%;
+    }
+    .Title1 h1 {
+        margin-top: 15%;
+    }
+    .sec1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+    .boxLeft1 h3 {
+        text-align: center;
+    }
+    .boxLeft1 p {
+        text-align: center;
+    }
+    .boxRight1 img {
+        width: 100%;
+    }
 }

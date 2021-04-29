@@ -404,9 +404,10 @@ body {
 }
 
 .boxLeft3 img {
+    display: flex;
+    flex-direction: column;
     width: 150%;
     height: auto;
-    display: block;
     margin-left: -44%;
 }
 
@@ -501,7 +502,8 @@ body {
     /* Seccion Letra moviles */
     .boxRight1 {
         width: 100%;
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
     /* Oculta imagen de escritorio */
     .boxRight1 img {
@@ -552,10 +554,39 @@ body {
         text-align: center;
     }
     .boxRight2 p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-align: center;
         padding: 0%;
         margin-top: 10%;
     }
+
+    /* Sección 3 MOVILES */
+
+    .sec3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+    }
+    .boxLeft3{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .boxLeft3 img{
+        content: url(../images/illustration-laptop-mobile.svg);
+        margin-left: -20%;
+    }
+
+    .boxRight3 h3{
+        text-align: center;
+    }
+    .boxRight3 p{
+        text-align: center;
+    }
+
+
+
 
 }

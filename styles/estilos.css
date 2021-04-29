@@ -287,6 +287,27 @@ body {
     display: block;
 }
 
+.boxRight1 h3 {
+    margin-top: 10%;
+    font-weight: 600;
+    font-family: 'Overpass', sans-serif;
+    text-align: left;
+    color: hsl(208, 49%, 24%);
+}
+
+.boxRight1 p {
+    padding-top: 5%;
+    color: hsl(207, 13%, 34%);
+    font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+}
+
+.boxRight1 {
+    display: flex;
+    float: right;
+    width: 50%;
+}
+
 /* Segunda sección */
 
 .sec2 {
@@ -450,6 +471,7 @@ body {
     .Title1 h1 {
         margin-top: 15%;
     }
+    /* Sección 1 moviles */
     .sec1 {
         display: flex;
         flex-direction: column;
@@ -457,22 +479,41 @@ body {
         justify-content: center;
         width: auto;
     }
+    /* Seccion 1 Imagen moviles */
     .boxLeft1 {
-        width: 100%;
-    }
-    .boxLeft1 h3 {
-        text-align: center;
-    }
-    .boxLeft1 p {
-        text-align: center;
-    }
-    .boxRight1 {
-        margin-top: 15%;
-        width: 100%;
-    }
-    .boxRight1 img {
         width: 100%;
         content: url(../images/illustration-editor-mobile.svg);
     }
+    /* Oculta letra de escritorio */
+    .boxLeft1 h3 {
+        visibility: hidden;
+    }
+    .boxLeft1 p {
+        visibility: hidden;
+    }
 
+    /* Seccion Letra moviles */
+    .boxRight1 {
+        width: 100%;
+        display: block;
+    }
+    /* Oculta imagen de escritorio */
+    .boxRight1 img {
+        visibility: hidden;
+    }
+    .boxRight1 h3 {
+        text-align: center;
+    }
+    .boxRight1 p {
+        text-align: center;
+    }
+
+    /* Sección 2 Moviles */
+    .sec2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
 }

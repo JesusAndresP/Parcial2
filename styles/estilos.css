@@ -308,7 +308,7 @@ body {
     width: 50%;
 }
 
-/* Segunda sección */
+/* Sección 2 Escritorio */
 
 .sec2 {
     background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -319,6 +319,8 @@ body {
     justify-content: center;
     margin-top: 10%;
 }
+
+/* Letra Sección 2 */
 
 .boxRight2 {
     width: 50%;
@@ -347,11 +349,15 @@ body {
     overflow: hidden;
 }
 
+/* Imagen circulos fondo */
+
 .circulos {
     height: 200%;
     margin-top: -60%;
     margin-left: -30%;
 }
+
+/* Imagen celulares */
 
 .celulares {
     position: absolute;
@@ -477,7 +483,8 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: auto;
+        height: auto;
+
     }
     /* Seccion 1 Imagen moviles */
     .boxLeft1 {
@@ -491,7 +498,6 @@ body {
     .boxLeft1 p {
         visibility: hidden;
     }
-
     /* Seccion Letra moviles */
     .boxRight1 {
         width: 100%;
@@ -507,7 +513,6 @@ body {
     .boxRight1 p {
         text-align: center;
     }
-
     /* Sección 2 Moviles */
     .sec2 {
         display: flex;
@@ -515,5 +520,42 @@ body {
         align-items: center;
         justify-content: center;
         width: auto;
+        height: 40%;
     }
+    .boxLeft2 {
+        align-items: center;
+        float: none;
+        width: 100%;
+        background-image: url(../images/bg-pattern-circles.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 150%;
+    }
+    .circulos {
+        visibility: hidden;
+    }
+    .celulares {
+        margin-left: 0%;
+        height: 55%;
+        margin-top: -65%;
+
+    }
+    /* Letra sección 2 */
+    .boxRight2 {
+        margin-top: 25%;
+        padding-top: 25%;
+        position: absolute;
+        width: 100%;
+    }
+    .boxRight2 h1 {
+        font-size: 3em;
+        text-align: center;
+    }
+    .boxRight2 p {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0%;
+        margin-top: 10%;
+    }
+
 }

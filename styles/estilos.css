@@ -258,6 +258,7 @@ body {
 
 .boxLeft1 {
     width: 50%;
+    
 }
 
 .boxLeft1 h3 {
@@ -282,9 +283,10 @@ body {
 }
 
 .boxRight1 img {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
 }
 
 .boxRight1 h3 {
@@ -324,6 +326,7 @@ body {
 
 .boxRight2 {
     width: 50%;
+    
 }
 
 .boxRight2 h1 {
@@ -346,24 +349,23 @@ body {
     float: left;
     width: 50%;
     height: 100%;
-    overflow: hidden;
-}
 
-/* Imagen circulos fondo */
+ 
 
-.circulos {
-    height: 200%;
-    margin-top: -60%;
-    margin-left: -30%;
+    background-image: url(../images/bg-pattern-circles.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 100%;
+    background-position-x: 100%;
+
 }
 
 /* Imagen celulares */
 
 .celulares {
-    position: absolute;
-    z-index: 9;
-    margin-left: -25%;
-    height: 95%;
+    margin-top: -13%;
+    height: 160%;
+
 }
 
 /* Tercer sección */
@@ -453,13 +455,14 @@ body {
 
 /* Adaptibilidad moviles */
 
-@media screen and (max-width:767px) {
+@media (max-width:768px){
     body {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
     .menuDesktop {
-        visibility: hidden;
+        display: none;
     }
     .menuMovil {
         visibility: visible;
@@ -470,7 +473,7 @@ body {
         margin-left: 5%;
     }
     .BotonesCabecera {
-        visibility: hidden;
+        display: none;
     }
     .hero {
         padding-bottom: 40%;
@@ -493,20 +496,21 @@ body {
     }
     /* Oculta letra de escritorio */
     .boxLeft1 h3 {
-        visibility: hidden;
+        display: none;
     }
     .boxLeft1 p {
-        visibility: hidden;
+        display: none;
     }
     /* Seccion Letra moviles */
     .boxRight1 {
         width: 100%;
         display: flex;
         flex-direction: column;
+        padding-bottom: 40%;
     }
     /* Oculta imagen de escritorio */
     .boxRight1 img {
-        visibility: hidden;
+        display: none;
     }
     /* Centra texto sección 1 */
     .boxRight1 h3 {
@@ -522,24 +526,18 @@ body {
         align-items: center;
         justify-content: center;
         width: auto;
-        height: 40%;
+        height: 800px;
     }
     .boxLeft2 {
-        align-items: center;
-        float: none;
         width: 100%;
-        background-image: url(../images/bg-pattern-circles.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position-y: 150%;
+        background-position-y: 170%;
+        background-position-x: 50%;
     }
     .circulos {
         visibility: hidden;
     }
     .celulares {
-        margin-left: 0%;
         height: 55%;
-        margin-top: -65%;
     }
     /* Letra sección 2 */
     .boxRight2 {
@@ -601,5 +599,15 @@ body {
         margin-top: 15%;
         width: 100%;
     }
+
+}
+@media screen and (min-width:1024px){
+    .boxRight1 .letraMovil1 {
+        display: none;
+    }
+    .menuMovil{
+        display: none;
+    }
+
 
 }

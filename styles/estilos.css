@@ -472,6 +472,7 @@ body {
     }
     .boxRight1 img {
         width: 100%;
-        content: url(./images/illustration-editor-mobile.svg);
+        content: url(../images/illustration-editor-mobile.svg);
     }
+
 }

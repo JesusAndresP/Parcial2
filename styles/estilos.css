@@ -21,17 +21,12 @@ body {
     flex-flow: column nowrap;
     background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     border-radius: 0px 0px 0px 120px;
-    height: auto;
+    height: 700px;
     padding-bottom: 10%;
 }
 
-.cabecera {
+header {
     display: flex;
-    flex-flow: row nowrap;
-    max-height: 100px;
-    max-width: 100%;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
 }
 
 .logo {
@@ -40,94 +35,45 @@ body {
     align-items: center;
 }
 
-.menuDesktop {
+.Menu {
+    height: 75px;
+    width: 100vw;
     display: flex;
-    flex: 5 3 auto;
-    font-family: 'Ubuntu', sans-serif;
-    z-index: 10;
+    justify-content: space-between;
     align-items: center;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-.menuDesktop a {
+.Menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.Menu_items li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.Menu_items li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
     color: hsl(0, 0%, 100%);
-    margin-left: 5%;
 }
 
-.menuMovil {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    font-family: 'Ubuntu', sans-serif;
-    z-index: 100;
-}
-
-.menuMovil ul {
-    display: none;
-    background: hsl(0, 0%, 100%);
-    list-style: none;
-    text-align: center;
-    border-radius: 5px;
-    width: 200px;
-}
-
-.menuMovil a {
-    color: hsl(208, 49%, 24%);
-    font-weight: 500;
-    margin-top: 5%;
-}
-
-.menuMovil li {
-    display: flex;
-    flex-direction: column;
-    padding-top: 25%;
-    margin: 0;
-    list-style: none;
-}
-
-.menuMovil input:checked~ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.menuMovil input {
-    display: none;
-}
-
-.menuMovil input:checked~label {
-    display: flex;
-    content: url(/images/icon-close.svg);
-}
-
-.menuMovil :hover {
+.btn_menu {
+    margin-right: 30px;
+    font-size: 25px;
     cursor: pointer;
+    display: none;
+    color: hsl(0, 0%, 100%);
 }
 
-.menuMovil label {
-    display: inline-block;
-    user-select: none;
-}
-
-.menuMovil hr {
-    margin-top: 30%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-    width: 80%;
-}
-
-.menuMovil button {
-    font-family: 'Ubuntu', sans-serif;
-    border-radius: 35px;
-    border-style: none;
-    width: 100px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin-left: 26%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: hsl(353, 100%, 62%);
-    color: white;
-    font-weight: 700;
-    letter-spacing: 1px;
+ul.show {
+    top: 65px;
 }
 
 /* Botones login y Sign up */
@@ -135,14 +81,12 @@ body {
 .BotonesCabecera {
     display: flex;
     align-items: center;
-    flex: 1 1 auto;
     font-family: 'Ubuntu', sans-serif;
     z-index: 10;
 }
 
 .BotonesCabecera a {
     color: hsl(0, 0%, 100%);
-    margin-right: 10%;
 }
 
 .BotonesCabecera button {
@@ -151,7 +95,7 @@ body {
     border-style: none;
     width: auto;
     height: auto;
-    padding: 10%;
+    padding: 10px;
     color: hsl(353, 100%, 62%);
     font-weight: 700;
     letter-spacing: 1px;
@@ -169,7 +113,7 @@ body {
     margin-top: 130px;
     align-items: center;
     text-align: center;
-    z-index: 10;
+    z-index: 9;
 }
 
 .contenido-hero h1 {
@@ -258,7 +202,6 @@ body {
 
 .boxLeft1 {
     width: 50%;
-    
 }
 
 .boxLeft1 h3 {
@@ -326,7 +269,6 @@ body {
 
 .boxRight2 {
     width: 50%;
-    
 }
 
 .boxRight2 h1 {
@@ -349,15 +291,11 @@ body {
     float: left;
     width: 50%;
     height: 100%;
-
- 
-
     background-image: url(../images/bg-pattern-circles.png);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 100%;
     background-position-x: 100%;
-
 }
 
 /* Imagen celulares */
@@ -365,7 +303,6 @@ body {
 .celulares {
     margin-top: -13%;
     height: 160%;
-
 }
 
 /* Tercer sección */
@@ -455,18 +392,45 @@ body {
 
 /* Adaptibilidad moviles */
 
-@media (max-width:768px){
+@media (max-width:800px) {
     body {
         display: flex;
         flex-direction: column;
         width: auto;
     }
-    .menuDesktop {
-        display: none;
+    .Menu {
+        height: 65px;
+        justify-content: flex-end;
+        z-index: 10;
     }
-    .menuMovil {
-        visibility: visible;
-        margin-right: 5%;
+    .btn_menu {
+        display: inline-flex;
+    }
+    .Menu_items {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% -65px);
+        top: -100vh;
+        text-align: center;
+        flex-direction: column;
+        height: calc(100% -65px);
+        background-color: white;
+        border-radius: 5px;
+    }
+    .Menu_items li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .Menu_items li:hover {
+        background: none;
+    }
+    .Menu_items li a {
+        font-size: 20px;
+        font-weight: bold;
+        color: hsl(208, 49%, 24%);
+    }
+    .Menu_items li {
+        margin: 5px 0 0 0;
     }
     .logo {
         padding: 0;
@@ -533,11 +497,8 @@ body {
         background-position-y: 170%;
         background-position-x: 50%;
     }
-    .circulos {
-        visibility: hidden;
-    }
     .celulares {
-        height: 55%;
+        height: 50%;
     }
     /* Letra sección 2 */
     .boxRight2 {
@@ -579,9 +540,8 @@ body {
     .boxRight3 p {
         text-align: center;
     }
-
     /* Footer Moviles */
-    .pie{
+    .pie {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
@@ -590,24 +550,30 @@ body {
         height: auto;
         text-align: center;
     }
-
-    .pie li{
+    .pie li {
         margin-top: 2%;
     }
-
-    .pie div{
+    .pie div {
         margin-top: 15%;
         width: 100%;
     }
-
 }
-@media screen and (min-width:1024px){
+
+@media screen and (max-width: 858px)and(orientation:landscape) {
+    .Menu_items li {
+        margin: 5px 0 0 0;
+    }
+    .Menu_items {
+        overflow: scroll;
+        height: calc(100% -65px);
+    }
+}
+
+@media screen and (min-width:1024px) {
     .boxRight1 .letraMovil1 {
         display: none;
     }
-    .menuMovil{
+    .menuMovil {
         display: none;
     }
-
-
 }

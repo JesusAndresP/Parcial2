@@ -9,44 +9,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1800309c0.js" crossorigin="anonymous"></script>
+    <script src="./JS/Menu.js" defer></script>
+
 </head>
 
 <body>
     <div class="padre">
         <div class="hero">
-            <div class="cabecera">
+            <header>
                 <div class="logo">
                     <img src="./images/logo.svg" alt="">
                 </div>
-
-                <!-- Menu Desktop -->
-                <nav class="menuDesktop">
-                    <a href="#">Product</a>
-                    <a href="#">Company</a>
-                    <a href="#">Connect</a>
-                </nav>
-
-                <!-- Menu moviles -->
-                <nav class="menuMovil">
-                    <input type="checkbox" id="menu">
-                    <label for="menu">
-                        <img src="./images/icon-hamburger.svg" alt="" class="iconoMenu">
-                    </label>
-                    <ul>
+                <nav class="Menu">
+                    <ul class="Menu_items">
                         <li><a href="#">Product</a></li>
                         <li><a href="#">Company</a></li>
                         <li><a href="#">Connect</a></li>
-                        <hr>
-                        <a href="#">Login</a>
-                        <button class="botonMovil">Sign Up</button>
                     </ul>
+                    <span class="btn_menu">
+                        <i class="fa fa-bars"></i>
+                    </span>
                 </nav>
-
                 <div class="BotonesCabecera">
                     <a href="#">Login</a>
                     <button>Sign Up</button>
                 </div>
-            </div>
+            </header>
             <div class="contenido-hero">
                 <h1>A modern publishing platform</h1>
                 <h4>Grow your audience and build your online brand </h4>
@@ -79,25 +68,30 @@
                     molestiae voluptatem? Soluta, earum?</p>
             </div>
             <div class="boxRight1">
-            <div class="letraMovil1">
-                <h3>Introducing an extensible editor</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi maxime distinctio velit dicta omnis
-                    ut error quibusdam vero doloremque doloribus! Ipsum consectetur, quaerat non at mollitia incidunt
-                    delectus saepe assumenda.
-                    Distinctio similique officia, ratione aperiam vero ad adipisci consectetur nam magni, optio
-                    veritatis, amet odio doloribus perferendis. Nobis dolor nostrum corrupti, tempore et quam earum
-                    dolore, voluptas quaerat exercitationem natus?
-                    Ducimus minus, rerum quod fuga qui soluta laboriosam facere saepe impedit nemo excepturi pariatur
-                    dicta perferendis laudantium officiis esse corporis omnis inventore optio, aliquid magni atque
-                    molestiae voluptatem? Soluta, earum?</p>
-                <h3>Robust content management</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi maxime distinctio velit dicta omnis
-                    ut error quibusdam vero doloremque doloribus! Ipsum consectetur, quaerat non at mollitia incidunt
-                    delectus saepe assumenda.
-                    Distinctio similique officia, ri soluta laboriosam facere saepe impedit nemo excepturi pariatur
-                    dicta perferendis laudantium officiis esse corporis omnis inventore optio, aliquid magni atque
-                    molestiae voluptatem? Soluta, earum?</p>
-            </div>
+                <div class="letraMovil1">
+                    <h3>Introducing an extensible editor</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi maxime distinctio velit dicta
+                        omnis
+                        ut error quibusdam vero doloremque doloribus! Ipsum consectetur, quaerat non at mollitia
+                        incidunt
+                        delectus saepe assumenda.
+                        Distinctio similique officia, ratione aperiam vero ad adipisci consectetur nam magni, optio
+                        veritatis, amet odio doloribus perferendis. Nobis dolor nostrum corrupti, tempore et quam earum
+                        dolore, voluptas quaerat exercitationem natus?
+                        Ducimus minus, rerum quod fuga qui soluta laboriosam facere saepe impedit nemo excepturi
+                        pariatur
+                        dicta perferendis laudantium officiis esse corporis omnis inventore optio, aliquid magni atque
+                        molestiae voluptatem? Soluta, earum?</p>
+                    <h3>Robust content management</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi maxime distinctio velit dicta
+                        omnis
+                        ut error quibusdam vero doloremque doloribus! Ipsum consectetur, quaerat non at mollitia
+                        incidunt
+                        delectus saepe assumenda.
+                        Distinctio similique officia, ri soluta laboriosam facere saepe impedit nemo excepturi pariatur
+                        dicta perferendis laudantium officiis esse corporis omnis inventore optio, aliquid magni atque
+                        molestiae voluptatem? Soluta, earum?</p>
+                </div>
                 <img src="./images/illustration-editor-desktop.png" alt="">
             </div>
         </section>
@@ -106,7 +100,7 @@
         <section class="sec2">
             <div class="boxLeft2">
                 <img src="./images/illustration-phones.svg" alt="" class="celulares">
-        </div>
+            </div>
             <div class="boxRight2">
                 <h1>State of the art infraestructure</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque asperiores sunt pariatur

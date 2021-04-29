@@ -485,7 +485,6 @@ body {
         align-items: center;
         justify-content: center;
         height: auto;
-
     }
     /* Seccion 1 Imagen moviles */
     .boxLeft1 {
@@ -509,6 +508,7 @@ body {
     .boxRight1 img {
         visibility: hidden;
     }
+    /* Centra texto sección 1 */
     .boxRight1 h3 {
         text-align: center;
     }
@@ -540,7 +540,6 @@ body {
         margin-left: 0%;
         height: 55%;
         margin-top: -65%;
-
     }
     /* Letra sección 2 */
     .boxRight2 {
@@ -559,34 +558,48 @@ body {
         padding: 0%;
         margin-top: 10%;
     }
-
     /* Sección 3 MOVILES */
-
-    .sec3{
+    .sec3 {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: auto;
     }
-    .boxLeft3{
+    .boxLeft3 {
         width: 100%;
         display: flex;
         flex-direction: column;
     }
-    .boxLeft3 img{
+    .boxLeft3 img {
         content: url(../images/illustration-laptop-mobile.svg);
         margin-left: -20%;
     }
-
-    .boxRight3 h3{
+    .boxRight3 h3 {
         text-align: center;
     }
-    .boxRight3 p{
+    .boxRight3 p {
         text-align: center;
     }
 
+    /* Footer Moviles */
+    .pie{
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        text-align: center;
+    }
 
+    .pie li{
+        margin-top: 2%;
+    }
 
+    .pie div{
+        margin-top: 15%;
+        width: 100%;
+    }
 
 }

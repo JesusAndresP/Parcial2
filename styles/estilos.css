@@ -437,7 +437,7 @@ body {
         visibility: visible;
         margin-right: 5%;
     }
-    .logo{
+    .logo {
         padding: 0;
         margin-left: 5%;
     }
@@ -457,13 +457,21 @@ body {
         justify-content: center;
         width: auto;
     }
+    .boxLeft1 {
+        width: 100%;
+    }
     .boxLeft1 h3 {
         text-align: center;
     }
     .boxLeft1 p {
         text-align: center;
     }
+    .boxRight1 {
+        margin-top: 15%;
+        width: 100%;
+    }
     .boxRight1 img {
         width: 100%;
+        content: url(/images/illustration-editor-mobile.svg);
     }
 }

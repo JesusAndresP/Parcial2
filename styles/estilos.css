@@ -15,7 +15,6 @@ body {
 }
 
 /* Contenedor con fondo degradado naranja  */
-
 .hero {
     display: flex;
     flex-flow: column nowrap;
@@ -25,6 +24,7 @@ body {
     padding-bottom: 10%;
 }
 
+/* Header y menú */
 header {
     display: flex;
 }
@@ -93,8 +93,10 @@ ul.show {
     font-family: 'Ubuntu', sans-serif;
     border-radius: 35px;
     border-style: none;
-    width: auto;
+    width: 120px;
     height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 10px;
     color: hsl(353, 100%, 62%);
     font-weight: 700;
@@ -173,11 +175,6 @@ ul.show {
     cursor: pointer;
 }
 
-.heroimage {
-    position: fixed;
-    right: -80%;
-    top: -180%;
-}
 
 /* Primer titulo */
 
@@ -299,14 +296,12 @@ ul.show {
 }
 
 /* Imagen celulares */
-
 .celulares {
     margin-top: -13%;
     height: 160%;
 }
 
 /* Tercer sección */
-
 .sec3 {
     display: flex;
     margin-right: 15%;
@@ -398,11 +393,13 @@ ul.show {
         flex-direction: column;
         width: auto;
     }
+    /* Menu moviles */
     .Menu {
         height: 65px;
         justify-content: flex-end;
         z-index: 10;
     }
+    
     .btn_menu {
         display: inline-flex;
     }
@@ -432,10 +429,12 @@ ul.show {
     .Menu_items li {
         margin: 5px 0 0 0;
     }
+    /* Logo en moviles */
     .logo {
         padding: 0;
         margin-left: 5%;
     }
+    /* Oculta botones sign in */
     .BotonesCabecera {
         display: none;
     }
@@ -530,6 +529,7 @@ ul.show {
         display: flex;
         flex-direction: column;
     }
+    /* Cambia imagen de box3 */
     .boxLeft3 img {
         content: url(../images/illustration-laptop-mobile.svg);
         margin-left: -20%;
@@ -556,16 +556,6 @@ ul.show {
     .pie div {
         margin-top: 15%;
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 858px)and(orientation:landscape) {
-    .Menu_items li {
-        margin: 5px 0 0 0;
-    }
-    .Menu_items {
-        overflow: scroll;
-        height: calc(100% -65px);
     }
 }
 
